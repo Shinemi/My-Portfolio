@@ -1,0 +1,38 @@
+// ==========================================================================
+// VARIABLES
+// ==========================================================================
+
+// --- Polices ---
+$font-heading: 'Sora', sans-serif;
+$font-body: 'Outfit', sans-serif;
+
+// --- Couleurs ---
+$color-bg-light: #F8FAFC;
+$color-bg-dark: #0F172A;
+$color-text: #1E293B;
+$color-text-light: #F8FAFC;
+
+$color-primary: #2563EB;
+$color-secondary: #7C3AED;
+
+$gradient-accent: linear-gradient(135deg, #{$color-primary}, #{$color-secondary});
+
+// --- Ombres ---
+$shadow-small: 0 1px 3px rgba(15, 23, 42, 0.06);
+$shadow-medium: 0 4px 12px rgba(15, 23, 42, 0.08);
+$shadow-large: 0 8px 24px rgba(15, 23, 42, 0.1);
+
+// --- Radius ---
+$radius-small: 8px;
+$radius-medium: 10px;
+$radius-large: 12px;
+
+// --- Glassmorphism ---
+$glass-bg: rgba(255, 255, 255, 0.6);
+$glass-bg-dark: rgba(15, 23, 42, 0.5);
+$glass-border: rgba(255, 255, 255, 0.3);
+$glass-blur: 12px;
+
+// --- Transitions ---
+$transition-fast: 0.15s ease;
+$transition-base: 0.25s ease;

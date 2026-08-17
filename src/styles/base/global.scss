@@ -1,0 +1,65 @@
+// ==========================================================================
+// GLOBAL - Reset & base
+// ==========================================================================
+
+@use './variables' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@600&family=Outfit:wght@400&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: $font-body;
+  font-weight: 400;
+  color: $color-text;
+  background-color: $color-bg-light;
+  line-height: 1.6;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-heading;
+  font-weight: 600;
+  color: $color-text;
+  line-height: 1.25;
+}
