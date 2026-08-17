@@ -1,0 +1,84 @@
+@use '../base/variables' as *;
+
+header {
+    display: flex;
+    max-width: 1440px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+    background: $glass-bg;
+    backdrop-filter: blur($glass-blur);
+    border-bottom: 1px solid $glass-border;
+    box-shadow: $shadow-small;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    .header-content {
+        width: 100%;
+        max-width: 1440px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        font-family: $font-heading;
+        font-weight: 600;
+        font-size: 20px;
+        color: $color-text;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-links {
+        display: flex;
+        gap: 40px;
+
+        li a {
+            font-family: $font-body;
+            font-size: 16px;
+            color: $color-text;
+            transition: color 0.2s ease, text-shadow 0.2s ease;
+
+            &:hover {
+                color: $color-secondary;
+                text-shadow:
+                    0 0 6px rgba(124, 58, 237, 0.7),
+                    0 0 16px rgba(124, 58, 237, 0.4);
+            }
+        }
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+        .burger-menu {
+            display: block;
+        }
+
+        .navbar-links {
+            display: none;
+            position: absolute;
+            top: 64px;
+            left: 0;
+            right: 0;
+            flex-direction: column;
+            gap: 16px;
+            padding: 24px;
+            background: $glass-bg;
+            backdrop-filter: blur($glass-blur);
+            border-bottom: 1px solid $glass-border;
+
+            &.open {
+                display: flex;
+            }
+        }
+    }
+}
