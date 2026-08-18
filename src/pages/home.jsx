@@ -17,7 +17,7 @@ const Home = () => {
         <div className="hero-overlay" />
         <div className="hero-content">
           <img
-            src="/images/profile.jpg"
+            src="/src/assets/photo-intro.jpg"
             alt="Photo de Lucas"
             className="profile-photo"
           />
@@ -28,9 +28,6 @@ const Home = () => {
             <a href="/CV-Simon-Lucas.pdf" download className="btn btn-primary">
               Télécharger mon CV
             </a>
-            <Link to="/about" className="btn btn-outline">
-              En savoir plus sur moi
-            </Link>
           </div>
         </div>
       </section>

@@ -1,0 +1,54 @@
+@use '../base/variables' as *;
+
+.contact-page {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding: 64px 32px;
+
+  h1 {
+    font-size: 32px;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  .intro {
+    text-align: center;
+    margin-bottom: 40px;
+    color: rgba(30, 41, 59, 0.7);
+  }
+
+  .contact-layout {
+    display: flex;
+    gap: 48px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 32px;
+    background: $glass-bg;
+    backdrop-filter: blur($glass-blur);
+    border: 1px solid $glass-border;
+    border-radius: $radius-large;
+    box-shadow: $shadow-small;
+    height: fit-content;
+
+    .info-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      svg {
+        color: $color-primary;
+        flex-shrink: 0;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
