@@ -1,5 +1,6 @@
 import Collapse from '../components/collapse'
 import skills from '../data/skills.json'
+import timeline from '../data/timeline.json'
 import '../styles/pages/skills.scss'
 
 const Skills = () => {
@@ -19,6 +20,24 @@ const Skills = () => {
           </Collapse>
         ))}
       </div>
+
+      {/* --- PARCOURS --- */}
+      <section className="timeline-section">
+        <h2>Mon parcours</h2>
+
+        <div className="timeline">
+          {timeline.map((item, index) => (
+            <div key={index} className={`timeline-item ${item.type}`}>
+              <span className="timeline-tag">
+                {item.type === 'formation' ? 'Formation' : 'Expérience'}
+              </span>
+              <h3>{item.title}</h3>
+              <p className="timeline-meta">{item.place} — {item.period}</p>
+              <p>{item.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
     </main>
   )
 }

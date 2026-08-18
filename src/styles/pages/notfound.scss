@@ -1,0 +1,48 @@
+@use '../base/variables' as *;
+
+.notfound-page {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 64px 32px;
+
+  .notfound-code {
+    font-family: $font-heading;
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 1;
+    background: $gradient-accent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+  }
+
+  .notfound-text {
+    font-size: 15px;
+    color: rgba(30, 41, 59, 0.7);
+    margin-bottom: 32px;
+    max-width: 400px;
+  }
+
+  .btn-primary {
+    padding: 12px 28px;
+    border-radius: $radius-medium;
+    background: $gradient-accent;
+    color: $color-text-light;
+    font-weight: 500;
+    transition: opacity $transition-fast;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}

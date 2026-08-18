@@ -24,4 +24,66 @@
     max-width: 640px;
     margin-inline: auto;
   }
+
+  .timeline-section {
+    margin-top: 80px;
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+  }
+
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 720px;
+    margin-inline: auto;
+  }
+
+  .timeline-item {
+    padding: 24px;
+    border-left: 3px solid $color-primary;
+    background: $glass-bg;
+    backdrop-filter: blur($glass-blur);
+    border-radius: 0 $radius-medium $radius-medium 0;
+    box-shadow: $shadow-small;
+
+    &.formation {
+      border-left-color: $color-secondary;
+    }
+
+    .timeline-tag {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 500;
+      padding: 3px 10px;
+      border-radius: $radius-small;
+      background: rgba(37, 99, 235, 0.1);
+      color: $color-primary;
+      margin-bottom: 8px;
+    }
+
+    &.formation .timeline-tag {
+      background: rgba(124, 58, 237, 0.1);
+      color: $color-secondary;
+    }
+
+    h3 {
+      font-size: 17px;
+      margin-bottom: 4px;
+    }
+
+    .timeline-meta {
+      font-size: 13px;
+      color: rgba(30, 41, 59, 0.6);
+      margin-bottom: 8px;
+    }
+
+    p:not(.timeline-meta) {
+      font-size: 14px;
+    }
+  }
 }

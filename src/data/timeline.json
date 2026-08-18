@@ -1,0 +1,44 @@
+[
+  {
+    "type": "formation",
+    "title": "Développeur Web & Web Mobile",
+    "place": "La Plateforme, Brignoles",
+    "period": "2025 - 2027",
+    "description": "Formation en cours : front-end et back-end (React, Node.js, PHP), API REST, bases de données relationnelles et NoSQL, méthodes Agile, sécurité (OWASP)."
+  },
+  {
+    "type": "experience",
+    "title": "Développeur Web - Stagiaire",
+    "place": "Degreane Horizon, Cuers",
+    "period": "Avril 2026",
+    "description": "Création d'une bibliothèque CSS interne et de composants réutilisables, développement d'une maquette UI avec documentation (infobulles)."
+  },
+  {
+    "type": "formation",
+    "title": "Bachelor Chef de projet Web et stratégie digitale",
+    "place": "Capforma CCI du Var, La Garde",
+    "period": "2024 - 2025",
+    "description": "Développement web, marketing digital, web design, suite Adobe."
+  },
+  {
+    "type": "experience",
+    "title": "Développeur Web - Stagiaire",
+    "place": "Degreane Horizon, Cuers",
+    "period": "Mai - Juin 2023",
+    "description": "Développement de pages administrateur pour la gestion d'un site météorologique (HTML, C#, ASP.NET, MariaDB)."
+  },
+  {
+    "type": "formation",
+    "title": "BTS Systèmes Numériques - Informatique & Réseaux",
+    "place": "Lycée Thomas Edison, Lorgues",
+    "period": "2022 - 2024",
+    "description": "Projet de fin d'étude : site e-commerce développé en équipe de 3 (HTML, CSS, PHP, SQL, Git)."
+  },
+  {
+    "type": "formation",
+    "title": "Baccalauréat STI2D",
+    "place": "Lycée de St-Maximin",
+    "period": "2020 - 2022",
+    "description": "Innovation technologique et éco-conception."
+  }
+]
