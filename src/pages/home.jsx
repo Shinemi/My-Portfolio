@@ -17,7 +17,7 @@ const Home = () => {
         <div className="hero-overlay" />
         <div className="hero-content">
           <img
-            src="/src/assets/photo-lucas.png"
+            src="/photo-lucas.png"
             alt="Photo de Lucas"
             className="profile-photo"
           />
