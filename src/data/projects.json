@@ -3,7 +3,7 @@
     "id": 1,
     "title": "API de Gestion de Tâches en Équipe",
     "description": "API Node.js/Express/MongoDB avec authentification JWT pour gérer des tâches en équipe.",
-    "images": ["/images/projects/api-taches-1.jpg"],
+    "images": ["/src/assets/projectImgs/APITachesProjet.png"],
     "technologies": ["Node.js", "Express", "MongoDB", "JWT"],
     "link": "",
     "repo": "https://github.com/Shinemi/API-de-Gestion-de-Taches-en-equipe"
@@ -12,7 +12,7 @@
     "id": 2,
     "title": "Kasa - Location de logements",
     "description": "Application de location de logements entre particuliers, avec galerie photo et FAQ dynamique.",
-    "images": ["/images/projects/kasa-1.jpg"],
+    "images": ["/src/assets/projectImgs/kasa1.png","/src/assets/projectImgs/kasa2.png","/src/assets/projectImgs/kasa3.png"],
     "technologies": ["React", "TypeScript", "Vite", "Sass"],
     "link": "",
     "repo": "https://github.com/Shinemi/Kasa---Eval-React"
@@ -21,25 +21,17 @@
     "id": 3,
     "title": "GeniArtHub",
     "description": "Site e-commerce dédié à l'art génératif par IA, front-end complet en JavaScript.",
-    "images": ["/images/projects/geniarthub-1.jpg"],
+    "images": ["/src/assets/projectImgs/geniArtHub1.png","/src/assets/projectImgs/geniArtHub2.png","/src/assets/projectImgs/geniArtHub3.png"],
     "technologies": ["JavaScript", "HTML", "CSS"],
     "link": "https://shinemi.github.io/GeniArtHub/",
     "repo": "https://github.com/Shinemi/GeniArtHub"
   },
-  {
-    "id": 4,
-    "title": "API Réservation de Salle",
-    "description": "API back-end pour la réservation de salles.",
-    "images": ["/images/projects/api-reservation-1.jpg"],
-    "technologies": ["JavaScript", "Node.js"],
-    "link": "",
-    "repo": "https://github.com/Shinemi/API-r-servation-salle"
-  },
+
   {
     "id": 5,
     "title": "Booki (PHP refactored)",
     "description": "Refonte back-end en PHP du site Booki, exercice de manipulation serveur.",
-    "images": ["/images/projects/booki-1.jpg"],
+    "images": ["/src/assets/projectImgs/"],
     "technologies": ["PHP"],
     "link": "",
     "repo": "https://github.com/Shinemi/booki-php-refactored"
@@ -48,7 +40,7 @@
     "id": 6,
     "title": "Gestion d'événements (back PHP)",
     "description": "Back-end PHP/MySQL pour une application de gestion d'événements avec gestion des rôles.",
-    "images": ["/images/projects/event-management-1.jpg"],
+    "images": ["/src/assets/projectImgs/"],
     "technologies": ["PHP", "MySQL"],
     "link": "",
     "repo": "https://github.com/Shinemi/DB-php-back-Event-Management"
@@ -57,7 +49,7 @@
     "id": 7,
     "title": "Portfolio statique (CP3)",
     "description": "Portfolio personnel statique réalisé en HTML/CSS dans le cadre d'une évaluation de formation.",
-    "images": ["/images/projects/eval-cp3-1.jpg"],
+    "images": ["/src/assets/projectImgs/"],
     "technologies": ["HTML", "CSS"],
     "link": "https://shinemi.github.io/Eval-CP3---D-veloppement-d-un-Portfolio-Personnel-Statique-/",
     "repo": "https://github.com/Shinemi/Eval-CP3---D-veloppement-d-un-Portfolio-Personnel-Statique-"
@@ -66,25 +58,16 @@
     "id": 8,
     "title": "Ancien Portfolio",
     "description": "Première version de portfolio personnel, avant la refonte actuelle.",
-    "images": ["/images/projects/old-portfolio-1.jpg"],
+    "images": ["/src/assets/projectImgs/"],
     "technologies": ["TypeScript"],
     "link": "https://shinemi.github.io/Portfolio/",
     "repo": "https://github.com/Shinemi/Portfolio"
   },
   {
-    "id": 9,
-    "title": "Weather Dashboard (React)",
-    "description": "Tableau de bord météo, version React d'un projet réalisé initialement en vanilla JS.",
-    "images": ["/images/projects/weather-react-1.jpg"],
-    "technologies": ["React", "JavaScript"],
-    "link": "",
-    "repo": "https://github.com/Shinemi/Weather-Dashboard-React-Version"
-  },
-  {
     "id": 10,
     "title": "Weather Dashboard",
     "description": "Tableau de bord météo en JavaScript vanilla, appel à une API météo externe.",
-    "images": ["/images/projects/weather-1.jpg"],
+    "images": ["/src/assets/projectImgs/"],
     "technologies": ["JavaScript", "CSS"],
     "link": "https://shinemi.github.io/Weather-Dashboard/",
     "repo": "https://github.com/Shinemi/Weather-Dashboard"
@@ -93,7 +76,7 @@
     "id": 11,
     "title": "Vividly",
     "description": "Construction d'une interface en mobile first, exercice de design responsive.",
-    "images": ["/images/projects/vividly-1.jpg"],
+    "images": ["/src/assets/projectImgs/"],
     "technologies": ["HTML", "CSS"],
     "link": "https://shinemi.github.io/vividly/",
     "repo": "https://github.com/Shinemi/vividly"
@@ -102,7 +85,7 @@
     "id": 12,
     "title": "Home Key - Practice Project",
     "description": "Design inspiré de Booki (OpenClassrooms), réalisé uniquement avec des flexbox.",
-    "images": ["/images/projects/home-key-1.jpg"],
+    "images": ["/src/assets/projectImgs/"],
     "technologies": ["HTML", "CSS", "Flexbox"],
     "link": "https://shinemi.github.io/Home-key---Practice-Project/",
     "repo": "https://github.com/Shinemi/Home-key---Practice-Project"
@@ -111,7 +94,7 @@
     "id": 13,
     "title": "Formulaire interactif - Carte bancaire",
     "description": "Application React avec formulaire interactif affichant en direct les informations sur une carte bancaire stylisée.",
-    "images": ["/images/projects/credit-card-1.jpg"],
+    "images": ["/src/assets/projectImgs/cardDetail1.png"],
     "technologies": ["React", "JavaScript"],
     "link": "https://interactive-form-with-credit-card-i.vercel.app",
     "repo": "https://github.com/Shinemi/Interactive-Form-with-Credit-Card-info"
@@ -120,7 +103,7 @@
     "id": 14,
     "title": "Tic-Tac-Toe",
     "description": "Jeu de morpion interactif en JavaScript.",
-    "images": ["/images/projects/tictactoe-1.jpg"],
+    "images": ["/src/assets/projectImgs/"],
     "technologies": ["JavaScript", "HTML", "CSS"],
     "link": "",
     "repo": "https://github.com/Shinemi/Tic-Tac-Toe"
@@ -129,7 +112,7 @@
     "id": 15,
     "title": "Pokédex (Python/Tkinter)",
     "description": "Application desktop Pokédex avec interface graphique Tkinter en Python.",
-    "images": ["/images/projects/pokedex-1.jpg"],
+    "images": ["/src/assets/projectImgs/pokedex.png","/src/assets/projectImgs/pokedex2.png"],
     "technologies": ["Python", "Tkinter"],
     "link": "",
     "repo": "https://github.com/Shinemi/Pokedex-Tkinter-Python"
@@ -138,7 +121,7 @@
     "id": 16,
     "title": "Skill Facile (reproduction)",
     "description": "Reproduction pixel-perfect du site Skill Facile, exercice de formation.",
-    "images": ["/images/projects/skill-facile-1.jpg"],
+    "images": ["/src/assets/projectImgs/"],
     "technologies": ["HTML", "CSS"],
     "link": "https://shinemi.github.io/Skill-Facile---Reproduction/",
     "repo": "https://github.com/Shinemi/Skill-Facile---Reproduction"
@@ -147,7 +130,7 @@
     "id": 17,
     "title": "Website Writter (reproduction)",
     "description": "Reproduction du site Writter à des fins d'exercice.",
-    "images": ["/images/projects/writter-1.jpg"],
+    "images": ["/src/assets/projectImgs/"],
     "technologies": ["HTML", "CSS"],
     "link": "https://shinemi.github.io/Website-Writter---Reproduction/",
     "repo": "https://github.com/Shinemi/Website-Writter---Reproduction"
@@ -156,7 +139,7 @@
     "id": 18,
     "title": "Brigitte Galerie d'Art (reproduction)",
     "description": "Reproduction d'une galerie d'art en ligne, exercice de formation.",
-    "images": ["/images/projects/brigitte-1.jpg"],
+    "images": ["/src/assets/projectImgs/"],
     "technologies": ["HTML", "CSS"],
     "link": "https://shinemi.github.io/Brigitte-Galerie-d-Art---Reproduction/",
     "repo": "https://github.com/Shinemi/Brigitte-Galerie-d-Art---Reproduction"
@@ -165,7 +148,7 @@
     "id": 19,
     "title": "Hagile (reproduction)",
     "description": "Reproduction du site Hagile, exercice de mise en page CSS.",
-    "images": ["/images/projects/hagile-1.jpg"],
+    "images": ["/src/assets/projectImgs/"],
     "technologies": ["HTML", "CSS"],
     "link": "https://shinemi.github.io/Hagile---Reproduction/",
     "repo": "https://github.com/Shinemi/Hagile---Reproduction"
@@ -174,7 +157,7 @@
     "id": 20,
     "title": "Scenty (reproduction)",
     "description": "Reproduction du site Scenty, exercice de mise en page CSS.",
-    "images": ["/images/projects/scenty-1.jpg"],
+    "images": ["/src/assets/projectImgs/"],
     "technologies": ["HTML", "CSS"],
     "link": "https://shinemi.github.io/Scenty---reproduction/",
     "repo": "https://github.com/Shinemi/Scenty---reproduction"
@@ -183,7 +166,7 @@
     "id": 21,
     "title": "Examen Foncière (reproduction)",
     "description": "Reproduction réalisée en HTML/CSS dans le cadre d'un examen de formation.",
-    "images": ["/images/projects/fonciere-1.jpg"],
+    "images": ["/src/assets/projectImgs/"],
     "technologies": ["HTML", "CSS"],
     "link": "https://shinemi.github.io/-examen-Fonciere---Reprodcution/",
     "repo": "https://github.com/Shinemi/-examen-Fonciere---Reprodcution"
@@ -192,7 +175,7 @@
     "id": 22,
     "title": "John Doe",
     "description": "Site vitrine réalisé en HTML/CSS.",
-    "images": ["/images/projects/john-doe-1.jpg"],
+    "images": ["/src/assets/projectImgs/"],
     "technologies": ["HTML", "CSS"],
     "link": "https://shinemi.github.io/John-doe/",
     "repo": "https://github.com/Shinemi/John-doe"
