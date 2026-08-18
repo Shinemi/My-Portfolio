@@ -5,12 +5,7 @@ const ProjectCard = ({ project }) => {
   const targetUrl = project.link || project.repo
 
   return (
-    <a
-      href={targetUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="project-card"
-    >
+    <div className="project-card">
       <Carousel images={project.images} altText={project.title} />
 
       <div className="project-card-content">
@@ -22,8 +17,17 @@ const ProjectCard = ({ project }) => {
             <span key={tech} className="badge">{tech}</span>
           ))}
         </div>
+
+        <a
+          href={targetUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="details-link"
+        >
+          Voir en détail →
+        </a>
       </div>
-    </a>
+    </div>
   )
 }
 

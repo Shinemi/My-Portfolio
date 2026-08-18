@@ -1,14 +1,14 @@
 [
   {
     "category": "Front-end",
-    "skills": ["HTML5", "CSS3 / SCSS", "JavaScript", "React"]
+    "skills": ["HTML5", "CSS3 / SCSS", "JavaScript", "TypeScript", "React"]
   },
   {
     "category": "Back-end",
-    "skills": ["PHP", "Node.js", "Express", "MySQL", "MongoDB"]
+    "skills": ["PHP", "Node.js", "Express", "MySQL", "MongoDB", "Python"]
   },
   {
     "category": "Outils & Workflow",
-    "skills": ["Git", "GitHub", "Figma", "VS Code"]
+    "skills": ["Git", "GitHub", "Vite", "Figma", "VS Code"]
   }
 ]

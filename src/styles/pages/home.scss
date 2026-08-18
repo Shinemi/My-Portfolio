@@ -1,131 +1,177 @@
 @use '../base/variables' as *;
 
 .home {
-    section {
-        max-width: 1440px;
-        margin-inline: auto;
-        padding: 64px 32px;
-    }
+  section {
+    max-width: 1440px;
+    margin-inline: auto;
+    padding: 64px 32px;
+  }
 
-    h2 {
-        font-size: 28px;
-        margin-bottom: 32px;
-        text-align: center;
-    }
+  h2 {
+    font-size: 28px;
+    margin-bottom: 32px;
+    text-align: center;
+  }
 
-    .cta-btn {
-        display: inline-block;
-        margin-top: 32px;
-        padding: 12px 28px;
-        border-radius: $radius-medium;
-        background: $gradient-accent;
-        color: $color-text-light;
-        font-weight: 500;
-        transition: opacity $transition-fast;
+  .cta-btn {
+    display: inline-block;
+    margin-top: 32px;
+    padding: 12px 28px;
+    border-radius: $radius-medium;
+    background: $gradient-accent;
+    color: $color-text-light;
+    font-weight: 500;
+    transition: opacity $transition-fast;
 
-        &:hover {
-            opacity: 0.9;
-        }
+    &:hover {
+      opacity: 0.9;
     }
+  }
 }
 
 // --- Hero ---
 .hero {
+  position: relative;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.7);
+  }
+
+  .hero-content {
     position: relative;
-    min-height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url('/images/hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
+    z-index: 1;
+    text-align: center;
+    color: $color-text-light;
 
-    .hero-overlay {
-        position: absolute;
-        inset: 0;
-        background: rgba(15, 23, 42, 0.7);
+    .profile-photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-inline: auto;
+      margin-bottom: 20px;
+      border: 3px solid $color-text-light;
     }
 
-    .hero-content {
-        position: relative;
-        z-index: 1;
-        text-align: center;
-        color: $color-text-light;
-
-        .profile-photo {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-inline: auto;
-            margin-bottom: 20px;
-            border: 3px solid $color-text-light;
-        }
-
-        h1 {
-            font-size: 36px;
-            color: $color-text-light;
-            margin-bottom: 12px;
-        }
-
-        p {
-            font-size: 16px;
-            max-width: 480px;
-            margin-inline: auto;
-        }
+    h1 {
+      font-size: 36px;
+      color: $color-text-light;
+      margin-bottom: 12px;
     }
+
+    p {
+      font-size: 16px;
+      max-width: 480px;
+      margin-inline: auto;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      margin-top: 28px;
+
+      @media (max-width: 480px) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    .btn {
+      padding: 12px 24px;
+      border-radius: $radius-medium;
+      font-weight: 500;
+      font-size: 15px;
+      transition: transform $transition-fast, opacity $transition-fast, background $transition-fast;
+
+      &:hover {
+        transform: translateY(-2px);
+      }
+    }
+
+    .btn-primary {
+      background: $gradient-accent;
+      color: $color-text-light;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: $color-text-light;
+      border: 1px solid $color-text-light;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
 }
 
 // --- Compétences ---
 .skills-section {
-    text-align: center;
+  text-align: center;
 
-    .skills-list {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        max-width: 640px;
-        margin-inline: auto;
-        text-align: left;
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 16px;
+  }
+
+  .skill-tile {
+    padding: 24px 16px;
+    border-radius: $radius-medium;
+    background: $glass-bg;
+    backdrop-filter: blur($glass-blur);
+    border: 1px solid $glass-border;
+    box-shadow: $shadow-small;
+    font-family: $font-heading;
+    font-weight: 600;
+    font-size: 16px;
+    color: $color-text;
+    transition: background $transition-base, color $transition-base, transform $transition-base;
+
+    &:hover {
+      background: $gradient-accent;
+      color: $color-text-light;
+      transform: translateY(-4px);
     }
-
-    .badges {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-
-        .badge {
-            font-size: 13px;
-            padding: 4px 10px;
-            border-radius: $radius-small;
-            background: rgba(37, 99, 235, 0.1);
-            color: $color-primary;
-        }
-    }
+  }
 }
 
 // --- Projets ---
 .projects-section {
-    text-align: center;
+  text-align: center;
 
-    .projects-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 24px;
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
 
-        @media (max-width: 1024px) {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        @media (max-width: 768px) {
-            grid-template-columns: 1fr;
-        }
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
     }
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
 }
 
 // --- Contact ---
 .contact-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

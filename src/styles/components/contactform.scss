@@ -1,55 +1,65 @@
 @use '../base/variables' as *;
 
 .contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 640px;
+  padding: 32px;
+  background: $glass-bg;
+  backdrop-filter: blur($glass-blur);
+  border: 1px solid $glass-border;
+  border-radius: $radius-large;
+  box-shadow: $shadow-small;
+
+  label {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    max-width: 480px;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+  }
 
-    label {
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-        font-size: 14px;
-        font-weight: 500;
+  input,
+  textarea {
+    padding: 12px 16px;
+    border: 1px solid rgba(30, 41, 59, 0.15);
+    border-radius: $radius-small;
+    background: #FFFFFF;
+    font-size: 14px;
+    color: $color-text;
+    transition: border-color $transition-fast;
+
+    &:focus {
+      outline: none;
+      border-color: $color-primary;
+    }
+  }
+
+  button {
+    align-self: flex-start;
+    padding: 12px 28px;
+    border-radius: $radius-small;
+    background: $gradient-accent;
+    color: $color-text-light;
+    font-weight: 500;
+    transition: opacity $transition-fast;
+
+    &:hover {
+      opacity: 0.9;
     }
 
-    input,
-    textarea {
-        padding: 10px 14px;
-        border: 1px solid $glass-border;
-        border-radius: $radius-small;
-        background: $color-bg-light;
-        font-size: 14px;
-
-        &:focus {
-            outline: 2px solid $color-primary;
-        }
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
     }
+  }
 
-    button {
-        align-self: flex-start;
-        padding: 10px 24px;
-        border-radius: $radius-small;
-        background: $gradient-accent;
-        color: $color-text-light;
-        font-weight: 500;
-        transition: opacity $transition-fast;
+  .form-message {
+    font-size: 14px;
 
-        &:hover {
-            opacity: 0.9;
-        }
-
-        &:disabled {
-            opacity: 0.6;
-            cursor: not-allowed;
-        }
-    }
-
-    .form-message {
-        font-size: 14px;
-
-        &.success { color: #16A34A; }
-        &.error { color: #DC2626; }
-    }
+    &.success { color: #16A34A; }
+    &.error { color: #DC2626; }
+  }
 }
