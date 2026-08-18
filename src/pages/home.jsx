@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
-import ProjectCard from '../components/projectcard'
-import ContactForm from '../components/contactform'
+import ProjectCard from '../components/ProjectCard'
+import ContactForm from '../components/ContactForm'
 import projects from '../data/projects.json'
 import '../styles/pages/home.scss'
 

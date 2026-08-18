@@ -1,4 +1,4 @@
-import ProjectCard from '../components/projectcard'
+import ProjectCard from '../components/ProjectCard'
 import projects from '../data/projects.json'
 import '../styles/pages/projects.scss'
 

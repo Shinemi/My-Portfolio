@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import '../styles/components/contactform.scss'
+import '../styles/components/contactForm.scss'
 
 const CONTACT_EMAIL = 'simon.lucas.83136@gmail.com'
 

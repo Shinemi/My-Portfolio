@@ -1,5 +1,5 @@
 import Carousel from './carousel'
-import '../styles/components/projectcard.scss'
+import '../styles/components/projectCard.scss'
 
 const ProjectCard = ({ project }) => {
   const targetUrl = project.link || project.repo
