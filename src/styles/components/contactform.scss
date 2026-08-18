@@ -1,0 +1,55 @@
+@use '../base/variables' as *;
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 480px;
+
+    label {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    input,
+    textarea {
+        padding: 10px 14px;
+        border: 1px solid $glass-border;
+        border-radius: $radius-small;
+        background: $color-bg-light;
+        font-size: 14px;
+
+        &:focus {
+            outline: 2px solid $color-primary;
+        }
+    }
+
+    button {
+        align-self: flex-start;
+        padding: 10px 24px;
+        border-radius: $radius-small;
+        background: $gradient-accent;
+        color: $color-text-light;
+        font-weight: 500;
+        transition: opacity $transition-fast;
+
+        &:hover {
+            opacity: 0.9;
+        }
+
+        &:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+    }
+
+    .form-message {
+        font-size: 14px;
+
+        &.success { color: #16A34A; }
+        &.error { color: #DC2626; }
+    }
+}

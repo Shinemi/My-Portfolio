@@ -1,0 +1,45 @@
+@use '../base/variables' as *;
+
+.project-card {
+    display: block;
+    background: $glass-bg;
+    backdrop-filter: blur($glass-blur);
+    border: 1px solid $glass-border;
+    border-radius: $radius-large;
+    box-shadow: $shadow-small;
+    overflow: hidden;
+    transition: transform $transition-base, box-shadow $transition-base;
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: $shadow-medium;
+    }
+
+    .project-card-content {
+        padding: 20px;
+
+    h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    p {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+
+        .badge {
+            font-size: 12px;
+            padding: 4px 10px;
+            border-radius: $radius-small;
+            background: rgba(124, 58, 237, 0.1);
+            color: $color-secondary;
+        }
+    }
+    }
+}

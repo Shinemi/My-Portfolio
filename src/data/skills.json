@@ -1,0 +1,14 @@
+[
+  {
+    "category": "Front-end",
+    "skills": ["HTML5", "CSS3 / SCSS", "JavaScript", "React"]
+  },
+  {
+    "category": "Back-end",
+    "skills": ["PHP", "Node.js", "Express", "MySQL", "MongoDB"]
+  },
+  {
+    "category": "Outils & Workflow",
+    "skills": ["Git", "GitHub", "Figma", "VS Code"]
+  }
+]

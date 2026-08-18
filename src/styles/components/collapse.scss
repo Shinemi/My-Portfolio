@@ -1,0 +1,52 @@
+@use '../base/variables' as *;
+
+.collapse {
+    background: $glass-bg;
+    backdrop-filter: blur($glass-blur);
+    border: 1px solid $glass-border;
+    border-radius: $radius-medium;
+    box-shadow: $shadow-small;
+    overflow: hidden;
+
+    .collapse-header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        text-align: left;
+
+    h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .chevron {
+        transition: transform $transition-fast;
+        flex-shrink: 0;
+
+        &.open {
+            transform: rotate(180deg);
+        }
+    }
+    }
+
+    .preview-badges,
+    .collapse-content .badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .badge {
+        font-size: 13px;
+        padding: 4px 10px;
+        border-radius: $radius-small;
+        background: rgba(37, 99, 235, 0.1);
+        color: $color-primary;
+    }
+
+    .collapse-content {
+        padding: 0 20px 20px;
+    }
+}
