@@ -1,5 +1,7 @@
 @use '../base/variables' as *;
 
+// fix name
+
 .project-card {
   background: $glass-bg;
   backdrop-filter: blur($glass-blur);

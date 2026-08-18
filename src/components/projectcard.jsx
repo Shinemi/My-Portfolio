@@ -32,3 +32,5 @@ const ProjectCard = ({ project }) => {
 }
 
 export default ProjectCard
+
+//fix name
