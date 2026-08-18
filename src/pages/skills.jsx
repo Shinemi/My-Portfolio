@@ -10,11 +10,7 @@ const Skills = () => {
 
       <div className="skills-list">
         {skills.map((group) => (
-          <Collapse
-            key={group.category}
-            title={group.category}
-            preview={group.skills.slice(0, 3)}
-          >
+          <Collapse key={group.category} title={group.category}>
             <div className="badges">
               {group.skills.map((skill) => (
                 <span key={skill} className="badge">{skill}</span>

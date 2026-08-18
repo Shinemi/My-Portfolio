@@ -1,14 +1,18 @@
 [
   {
-    "category": "Front-end",
-    "skills": ["HTML5", "CSS3 / SCSS", "JavaScript", "TypeScript", "React"]
+    "category": "Langages & Front-end",
+    "skills": ["HTML5", "CSS3", "SASS", "JavaScript", "TypeScript", "React"]
   },
   {
-    "category": "Back-end",
-    "skills": ["PHP", "Node.js", "Express", "MySQL", "MongoDB", "Python"]
+    "category": "Back-end & Bases de données",
+    "skills": ["PHP", "Node.js", "Nodemon", "JWT", "MySQL", "MariaDB", "MongoDB", "Java", "C#", ".NET"]
   },
   {
-    "category": "Outils & Workflow",
-    "skills": ["Git", "GitHub", "Vite", "Figma", "VS Code"]
+    "category": "Outils & Environnement",
+    "skills": ["Git", "GitHub", "Vite", "PowerShell", "Windows Terminal", "Python", "Raspberry Pi"]
+  },
+  {
+    "category": "Design & Créa",
+    "skills": ["Figma", "Adobe XD", "Adobe Photoshop", "Adobe Illustrator", "Adobe Creative Cloud", "Canva", "Clip Studio Paint", "Krita", "Gimp"]
   }
 ]

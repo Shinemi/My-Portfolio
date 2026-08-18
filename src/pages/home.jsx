@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom'
 import ProjectCard from '../components/projectcard'
 import ContactForm from '../components/contactform'
-import skills from '../data/skills.json'
 import projects from '../data/projects.json'
 import '../styles/pages/home.scss'
 
+const featuredSkills = ['React', 'JavaScript', 'PHP', 'Bases de données', 'Node.js']
+
 const Home = () => {
   const featuredProjects = projects.slice(0, 3)
-  const allSkills = skills.flatMap((group) => group.skills)
 
   return (
     <main className="home">
@@ -17,7 +17,7 @@ const Home = () => {
         <div className="hero-overlay" />
         <div className="hero-content">
           <img
-            src="/src/assets/photo-intro.jpg"
+            src="/src/assets/photo-lucas.png"
             alt="Photo de Lucas"
             className="profile-photo"
           />
@@ -28,6 +28,9 @@ const Home = () => {
             <a href="/CV-Simon-Lucas.pdf" download className="btn btn-primary">
               Télécharger mon CV
             </a>
+            <Link to="/skills" className="btn btn-outline">
+              En savoir plus sur moi
+            </Link>
           </div>
         </div>
       </section>
@@ -37,7 +40,7 @@ const Home = () => {
         <h2>Compétences</h2>
 
         <div className="skills-grid">
-          {allSkills.map((skill) => (
+          {featuredSkills.map((skill) => (
             <div key={skill} className="skill-tile">
               {skill}
             </div>
