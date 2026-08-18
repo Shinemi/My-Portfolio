@@ -2,10 +2,9 @@ import { useState } from 'react'
 import emailjs from '@emailjs/browser'
 import '../styles/components/contactform.scss'
 
-// Remplace ces 3 valeurs par les tiennes (dashboard EmailJS)
-const SERVICE_ID = 'TON_SERVICE_ID'
-const TEMPLATE_ID = 'TON_TEMPLATE_ID'
-const PUBLIC_KEY = 'TA_PUBLIC_KEY'
+const SERVICE_ID = 'service_noy3d97'
+const TEMPLATE_ID = 'service_noy3d97'
+const PUBLIC_KEY = 'leBI678i7FKLkyWV6'
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({ name: '', email: '', message: '' })

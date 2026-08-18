@@ -5,7 +5,7 @@ const ProjectCard = ({ project }) => {
   const targetUrl = project.link || project.repo
 
   return (
-    
+    <a
       href={targetUrl}
       target="_blank"
       rel="noopener noreferrer"
